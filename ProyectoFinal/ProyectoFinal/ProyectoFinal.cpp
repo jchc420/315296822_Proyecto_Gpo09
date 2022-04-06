@@ -150,6 +150,8 @@ int main( )
     Model pokeArriba((char*)"Models/pokeball/pokearriba.obj");
     Model pokeAbajo((char*)"Models/pokeball/pokeabajo.obj");
     Model estante((char*)"Models/estante/estante.obj");
+    Model cama((char*)"Models/cama/cama.obj");
+
 
     GLuint texture;
     glGenTextures(1, &texture);
@@ -218,6 +220,11 @@ int main( )
         model = glm::mat4(1);
         glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
         estante.Draw(shader);
+
+        model = glm::mat4(1);
+        model = glm::translate(model, glm::vec3(-10.0f, 0.0f, 0.0f));
+        glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
+        cama.Draw(shader);
         
         glBindVertexArray(0);
 
