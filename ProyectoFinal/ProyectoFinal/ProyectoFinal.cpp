@@ -151,6 +151,8 @@ int main( )
     Model pokeAbajo((char*)"Models/pokeball/pokeabajo.obj");
     Model estante((char*)"Models/estante/estante.obj");
     Model cama((char*)"Models/cama/cama.obj");
+    Model mesita((char*)"Models/mesita/mesita.obj");
+    Model tv((char*)"Models/tv/tv.obj");
 
 
     GLuint texture;
@@ -222,10 +224,19 @@ int main( )
         estante.Draw(shader);
 
         model = glm::mat4(1);
-        model = glm::translate(model, glm::vec3(-10.0f, 0.0f, 0.0f));
+        //model = glm::translate(model, glm::vec3(-10.0f, 0.0f, 0.0f));
         glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
         cama.Draw(shader);
         
+        model = glm::mat4(1);
+        glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
+        mesita.Draw(shader);
+
+        model = glm::mat4(1);
+        glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
+        tv.Draw(shader);
+
+
         glBindVertexArray(0);
 
         /*glActiveTexture(GL_TEXTURE0);*/
