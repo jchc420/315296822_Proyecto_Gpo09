@@ -153,7 +153,9 @@ int main( )
     Model cama((char*)"Models/cama/cama.obj");
     Model mesita((char*)"Models/mesita/mesita.obj");
     Model tv((char*)"Models/tv/tv.obj");
-
+    Model cuarto((char*)"Models/cuarto/cuarto.obj");
+    Model piso_cuarto((char*)"Models/piso_cuarto/piso_cuarto.obj");
+    Model pc((char*)"Models/pc/pc.obj");
 
     GLuint texture;
     glGenTextures(1, &texture);
@@ -236,6 +238,17 @@ int main( )
         glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
         tv.Draw(shader);
 
+        model = glm::mat4(1);
+        glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
+        cuarto.Draw(shader);
+
+        model = glm::mat4(1);
+        glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
+        piso_cuarto.Draw(shader);
+
+        model = glm::mat4(1);
+        glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
+        pc.Draw(shader);
 
         glBindVertexArray(0);
 
