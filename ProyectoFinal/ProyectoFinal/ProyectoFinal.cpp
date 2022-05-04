@@ -156,6 +156,8 @@ int main( )
     Model cuarto((char*)"Models/cuarto/cuarto.obj");
     Model piso_cuarto((char*)"Models/piso_cuarto/piso_cuarto.obj");
     Model pc((char*)"Models/pc/pc.obj");
+    Model perchero((char*)"Models/perchero/perchero.obj");
+    Model alfombra((char*)"Models/alfombra/alfombra.obj");
 
     GLuint texture;
     glGenTextures(1, &texture);
@@ -249,6 +251,14 @@ int main( )
         model = glm::mat4(1);
         glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
         pc.Draw(shader);
+
+        model = glm::mat4(1);
+        glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
+        perchero.Draw(shader);
+
+        model = glm::mat4(1);
+        glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
+        alfombra.Draw(shader);
 
         glBindVertexArray(0);
 
