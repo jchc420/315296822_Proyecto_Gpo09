@@ -234,34 +234,6 @@ Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd faro.png
 Ni 1.00
-newmtl lambert44SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd bici_frame.png
-Ni 1.00
-newmtl lambert45SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd bici_metal.png
-Ni 1.00
-newmtl lambert46SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd bici_piel.png
-Ni 1.00
-newmtl lambert47SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd bici_ruedas.png
-Ni 1.00
 newmtl tv:initialShadingGroup
 illum 4
 Kd 0.00 0.00 0.00
