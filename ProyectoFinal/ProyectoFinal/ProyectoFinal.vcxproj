@@ -21,6 +21,16 @@
   <ItemGroup>
     <ClCompile Include="ProyectoFinal.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\anim.frag" />
+    <None Include="Shaders\anim.vs" />
+    <None Include="Shaders\anim2.frag" />
+    <None Include="Shaders\anim2.vs" />
+    <None Include="Shaders\lighting.frag" />
+    <None Include="Shaders\lighting.vs" />
+    <None Include="Shaders\SkyBox.frag" />
+    <None Include="Shaders\SkyBox.vs" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
