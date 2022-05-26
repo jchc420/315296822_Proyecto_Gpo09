@@ -110,6 +110,7 @@ vec3 CalcDirLight( DirLight light, vec3 normal, vec3 viewDir )
 	  if(result.a < 0.1)
         discard;*/
 	     	vec3 result=ambient + diffuse + specular;
+            color =vec4(result, 1.0f)*texture(texture_diffuse1, TextCoords);
 
     return (result);
 }
@@ -143,6 +144,7 @@ vec3 CalcPointLight( PointLight light, vec3 normal, vec3 fragPos, vec3 viewDir )
 	  if(result.a < 0.1)
         discard;*/
      	vec3 result=ambient + diffuse + specular;
+        color =vec4(result, 1.0f)*texture(texture_diffuse1, TextCoords);
 
     return (result);
     
@@ -183,7 +185,7 @@ vec3 CalcSpotLight( SpotLight light, vec3 normal, vec3 fragPos, vec3 viewDir )
         discard;*/
 
       	vec3 result=ambient + diffuse + specular;
-
+        color =vec4(result, 1.0f)*texture(texture_diffuse1, TextCoords);
     return (result);
     
 }

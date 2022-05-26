@@ -206,6 +206,8 @@ Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd piso.png
 Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
 newmtl lambert40SG
 illum 4
 Kd 0.00 0.00 0.00
@@ -275,6 +277,13 @@ Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd 1up.png
+Ni 1.00
+newmtl lambert50SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd astra_textura.png
 Ni 1.00
 newmtl tv:initialShadingGroup
 illum 4

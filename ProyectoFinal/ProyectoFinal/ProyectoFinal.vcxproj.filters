@@ -38,10 +38,16 @@
     <None Include="Shaders\anim2.vs">
       <Filter>Archivos de origen</Filter>
     </None>
-    <None Include="Shaders\lighting.frag">
+    <None Include="Shaders\lighting2.frag">
       <Filter>Archivos de origen</Filter>
     </None>
-    <None Include="Shaders\lighting.vs">
+    <None Include="Shaders\lighting2.vs">
+      <Filter>Archivos de origen</Filter>
+    </None>
+    <None Include="Shaders\lamp2.frag">
+      <Filter>Archivos de origen</Filter>
+    </None>
+    <None Include="Shaders\lamp2.vs">
       <Filter>Archivos de origen</Filter>
     </None>
   </ItemGroup>
